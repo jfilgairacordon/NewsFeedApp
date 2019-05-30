@@ -1,6 +1,6 @@
 # NewsFeedApp
-A Material Design news app with learning purposes
+A Material Design News Feed app with learning purposes developed using Flutter.
 
-It uses the public [NewsApi](https://newsapi.org/)
+The project will be using the public [NewsApi](https://newsapi.org/) to retrieve the feed.
 
 *Readme under construction*
