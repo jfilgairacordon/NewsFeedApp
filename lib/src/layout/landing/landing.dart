@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_feed_app/src/layout/landing/news_item.dart';
 import 'package:news_feed_app/src/layout/landing/top.dart';
+import 'package:news_feed_app/src/layout/landing/topics_list.dart';
 import 'package:news_feed_app/src/models/news.dart';
 import 'package:news_feed_app/src/services/news_service.dart';
 
@@ -31,7 +32,7 @@ class LandingState extends State<Landing> {
 
   // Métodos
   Widget buildList(AsyncSnapshot<NewsModel> snapshot) {
-    List<Widget> finalWidgets = [Top()];
+    List<Widget> finalWidgets = [Top(), TopicList()];
     finalWidgets = _buildWigetListBasedOnNewsModel(snapshot.data.articles, finalWidgets);
     return CustomScrollView(
       slivers: <Widget>[

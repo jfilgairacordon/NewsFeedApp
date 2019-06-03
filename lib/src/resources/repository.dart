@@ -5,5 +5,5 @@ import 'news_api_provider.dart';
 class Repository {
   final newsApiProvider = NewsMovieProvider();
 
-  Future<NewsModel> fetchAllNews() => newsApiProvider.fetchNewsList();
+  Future<NewsModel> fetchAllNews([String topic = "Deportes"]) => newsApiProvider.fetchNewsList(topic);
 }
